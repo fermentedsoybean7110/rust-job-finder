@@ -1,1 +1,3 @@
-// Vibe Reach API client is added in the job-list PR.
+pub mod jobs_client;
+
+pub use jobs_client::{ApiError, JobsClient};

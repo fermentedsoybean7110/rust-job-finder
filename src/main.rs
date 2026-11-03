@@ -1,4 +1,4 @@
-use rust_job_finder::{app, config::Config};
+use rust_job_finder::{api::JobsClient, app, config::Config};
 
 #[tokio::main]
 async fn main() {
@@ -7,5 +7,8 @@ async fn main() {
         .await
         .expect("failed to bind address");
     println!("listening on http://{}", config.addr);
-    axum::serve(listener, app()).await.expect("server error");
+    let client = JobsClient::new(config.api_base_url);
+    axum::serve(listener, app(client))
+        .await
+        .expect("server error");
 }

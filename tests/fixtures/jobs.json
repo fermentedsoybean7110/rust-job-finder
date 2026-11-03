@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": "cmvgblyxf18jnkyv3eqke6i0w",
+      "title": "Javascript／人事・採用クラウドシステム開発支援案件・求人",
+      "source": "PARTNER_FEED",
+      "companyName": "geechs 掲載案件",
+      "companyMasked": false,
+      "jobCategory": null,
+      "workLocation": "東京都",
+      "remoteNote": null,
+      "salaryType": "月額",
+      "salaryMin": 800000,
+      "salaryMax": 1000000,
+      "description": "【作業内容】\n人事向けのSaaSシステム新規開発。\n【募集スキル】\n・JavaScript",
+      "descriptionTruncated": false,
+      "sourceUrl": "https://geechs-job.com/project/details/12323",
+      "sourceHost": "geechs-job.com",
+      "requirementsText": null,
+      "publishedAt": "2026-10-19T00:00:00.000Z"
+    },
+    {
+      "id": "cmw100ncwid6yog1w2z0ln5h0",
+      "title": "【TypeScript】販売支援システムAWSクラウド移行案件",
+      "source": "CRAWLED",
+      "companyName": "社名非公開",
+      "companyMasked": false,
+      "jobCategory": "ai",
+      "workLocation": "東京都",
+      "remoteNote": "週3リモート",
+      "salaryType": "月額",
+      "salaryMin": 900000,
+      "salaryMax": 900000,
+      "description": "【TypeScript】販売支援システムAWSクラウド移行案件\n\n単価：900,000円／月",
+      "descriptionTruncated": false,
+      "sourceUrl": "https://example.com/jobs/2",
+      "sourceHost": "example.com",
+      "requirementsText": null,
+      "publishedAt": "2026-10-20T00:00:00.000Z"
+    }
+  ],
+  "pagination": {
+    "nextCursor": "eyJ0IjoxNzkzNTc3NjAwMDAwfQ",
+    "totalCount": 5893
+  }
+}
