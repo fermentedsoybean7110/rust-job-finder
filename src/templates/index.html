@@ -1,6 +1,26 @@
 {% extends "layout.html" %}
-{% block title %}{{ title }}{% endblock %}
+{% block title %}案件一覧 | Rust Job Finder{% endblock %}
 {% block content %}
-<h1>{{ title }}</h1>
-<p>案件一覧は今後のPRで実装予定です。</p>
+<h1>案件一覧</h1>
+<p class="count">公開中の案件: {{ total_count }} 件（{{ jobs.len() }} 件表示）</p>
+{% if jobs.is_empty() %}
+<p>表示できる案件がありません。</p>
+{% else %}
+<ul class="job-list">
+  {% for job in jobs %}
+  <li class="job-card">
+    <h2><a href="/jobs/{{ job.id }}">{{ job.title }}</a></h2>
+    <p class="company">{{ job.company_name }}</p>
+    <p class="salary">{{ job.salary }}</p>
+    <p class="summary">{{ job.summary }}</p>
+    <p class="links">
+      <a href="/jobs/{{ job.id }}">詳細を見る</a>
+      {% if let Some(url) = job.source_url %}
+      <a href="{{ url }}" target="_blank" rel="noopener noreferrer">掲載元</a>
+      {% endif %}
+    </p>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
 {% endblock %}
