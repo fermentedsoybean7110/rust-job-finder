@@ -2,3 +2,12 @@ body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.6; color: #
 .site-header { padding: 1rem; background: #b7410e; }
 .site-header a { color: #fff; font-weight: bold; text-decoration: none; }
 .container { max-width: 800px; margin: 0 auto; padding: 1rem; }
+.count { color: #666; }
+.job-list { list-style: none; padding: 0; }
+.job-card { border: 1px solid #ddd; border-radius: 6px; padding: 1rem; margin-bottom: 1rem; }
+.job-card h2 { margin: 0 0 .25rem; font-size: 1.1rem; }
+.company { margin: 0; font-weight: bold; }
+.salary { margin: 0; color: #b7410e; }
+.summary { color: #444; }
+.links a { margin-right: 1rem; }
+@media (max-width: 480px) { .container { padding: .5rem; } }
